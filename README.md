@@ -4,15 +4,25 @@
 
 ## Getting started
 
-Follow these steps to get this API up and running.
-- System requirements
-    - Node.js
-    - Postman or any other application with similar functionalities
-- Download and extract this repository to a local directory
-- Open a terminal/command-line window and navigate into the `app/` directory
-- Run `node index.js`
+#### Requirements
+- Node.js
+- Mailgun.com account
+- Stripe.com account
+- Postman or any other application with similar functionalities
+
+#### Configuring the API
+- Download and extract this repository to a local directory.
+- Navigate to `folder-containing-the-extracted-repository/app/lib` folder.
+- Open the `config.js` file in the editor of your choice.
+- Find the `environments.staging` object definition, the following properties of this object are initialized with empty string. **YOU NEED TO REPLACE THE EMPTY STRINGS WITH VALID ONES.**
+
+#### Running the API
+- Open a terminal/command-line window and navigate into the `app/` directory.
+- Run `node index.js`. 
 - If everything's O.K. then the terminal is now displaying relevant **_port_** information.
 - Check the next section to know more about API Interactions.
+
+> The default environment is "staging" and currently is the only environment defined in the configuration file. 
 <br><br>
 
 ## Interacting with API
@@ -164,7 +174,7 @@ The API accepts HTTP and HTTPS requests.
 
 ## API overview
 
-#### Integration with Stripe.com        
+#### Integration with stripe.com and mailgun.com       
 
 All the necessary information required to perform valid test transaction is stored in config file. 
 For testing purposes, a module with all dummy information has been added to the API. When the app launches in staging environment, this module is used. 
