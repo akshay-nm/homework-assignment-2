@@ -61,7 +61,15 @@ The API accepts HTTP requests.
 } 
 ```
 
+### Delete a user
 
+*protocol* : **HTTP**  
+*request_type* : **DELETE**  
+*path* : **users**  
+*payload_type* : **JSON**   
+*fields* :  **email**  
+
+*example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` 
 
 ## API overview
 ### Exposed       
