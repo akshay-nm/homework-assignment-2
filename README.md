@@ -11,14 +11,14 @@ Follow these steps to get this API up and running.
 - Download and extract this repository to a local directory
 - Open a terminal/command-line window and navigate into the `app/` directory
 - Run `node index.js`
-- If everything's O.K. then the terminal is now displaying relevant *port* information.
+- If everything's O.K. then the terminal is now displaying relevant **_port_** information.
 - Check the next section to know more about API Interactions.
 <br><br>
 
 ## Interacting with API
 
 The API accepts HTTP requests.
-<br>
+<br><br>
 
 #### Create a user 
 
@@ -76,7 +76,7 @@ The API accepts HTTP requests.
 *fields* :  **email**  
 
 *example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` 
-<br><br>
+<br><br><br>
 
 #### User Login
 
@@ -119,7 +119,7 @@ The API accepts HTTP requests.
 *fields* : **token**  
 
 *example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2`
-<br><br>
+<br><br><br>
 
 #### Update shopping cart
 
@@ -132,6 +132,7 @@ The API accepts HTTP requests.
     <li>token</li>
     <li>items</li>
 </ul>
+
 *example* : **UPDATE** request at `localhost:3000/cart` with following payload
 ``` 
 {
@@ -170,7 +171,7 @@ The API accepts HTTP requests.
 <br><br>
 
 ## API overview
-<br><br>
+<br>
 
 #### Exposed       
 - customer
