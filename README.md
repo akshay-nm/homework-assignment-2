@@ -2,15 +2,15 @@
 
 <br>
 
-## Getting started
+# Getting started
 
-#### Requirements
+## Requirements
 - Node.js working installation.
 - A working Mailgun.com account, _required for **sending email receipts to customers**._
 - A working Stripe.com account, _required for **stripe payment platform platform integration**._
 - _curl_, _Postman_ or any other application with similar functionalities at your disposal.
 
-#### Configuring the API
+## Configuring the API
 - Download and extract this repository to a local directory.
 - Navigate to `folder-containing-the-extracted-repository/app/lib/config/` directory. There should be files named `stripeConfig.js` and `mailgunConfig.js`. These files act as containers for data required from your end. 
 - Open the `stripeConfig.js` file in the editor of your choice.
@@ -22,7 +22,7 @@
 - Save the file and close it.  
 > Now the API setup is complete.
 
-#### Running the API
+## Running the API
 - Open a terminal/command-line window and navigate into the `app/` directory.
 - Run `node index.js`. 
 - If everything's O.K. then the terminal is now displaying relevant **_port_** information.
@@ -30,6 +30,14 @@
 
 > The default environment is "staging" and currently is the only environment defined in the configuration file. 
 <br><br>
+
+# API overview
+
+## Integration with stripe.com and mailgun.com       
+
+All the necessary information required to perform valid test transaction is stored in config file. 
+For testing purposes, a module with all dummy information has been added to the API. When the app launches in staging environment, this module is used. 
+This module adds payment information to each new user whenever a valid create user request is received.
 
 ## Interacting with API
 
@@ -178,13 +186,6 @@ The API accepts HTTP and HTTPS requests.
 ```
 <br><br>
 
-## API overview
-
-#### Integration with stripe.com and mailgun.com       
-
-All the necessary information required to perform valid test transaction is stored in config file. 
-For testing purposes, a module with all dummy information has been added to the API. When the app launches in staging environment, this module is used. 
-This module adds payment information to each new user whenever a valid create user request is received.
 
 [stripeConfig]: ./src/assets/images/stripeConfig.js
 [mailgunConfig]: ./src/assets/images/mailgunConfig.js
