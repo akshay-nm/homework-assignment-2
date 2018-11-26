@@ -17,7 +17,7 @@
 - Find the `stripe` object in the file. You can see that this project has a few properties initializaed by an empty string. **YOU NEED TO REPLACE THE EMPTY STRINGS WITH VALID ONES.**  
 ![Screenshot: An image showing what to replace in the `stripeConfig.js`](stringConfig)
 - Save the file and close it.
-- Open the `mailgunConfig.js` file in the editor of yoour choice, and update the necessary information.  
+- Open the `mailgunConfig.js` file in the editor of your choice, and update the necessary information under the `mailgun` object.  
 ![Screeshot: An image showing what to replace in the `mailgunConfig.js`](mailgunConfig)
 - Save the file and close it.  
 > Now the API setup is complete.
