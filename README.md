@@ -169,9 +169,3 @@ The API accepts HTTP and HTTPS requests.
 All the necessary information required to perform valid test transaction is stored in config file. 
 For testing purposes, a module with all dummy information has been added to the API. When the app launches in staging environment, this module is used. 
 This module adds payment information to each new user whenever a valid create user request is received.
-
-
-#### Background workers
-- Token validation
-- Log handler
-- Receipt handler
