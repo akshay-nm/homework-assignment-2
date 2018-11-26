@@ -166,21 +166,10 @@ The API accepts HTTP and HTTPS requests.
 
 #### Integration with Stripe.com        
 
-All the necessary information required to perform valid test transaction is stored in config file.
-When a new user is created, a dummy card is automatically added to the user object. 
-*Dummy card information*: 
-```
-{
-    "card": {
-        "number":"4242 4242 4242 4242"
-        "brand":"Visa"
-    },
-    "Token": {
-        "token":"tok_visa",
-        "brand":"visa"
-    }
-}
-```
+All the necessary information required to perform valid test transaction is stored in config file. 
+For testing purposes, a module with all dummy information has been added to the API. When the app launches in staging environment, this module is used. 
+This module adds payment information to each new user whenever a valid create user request is received.
+
 
 #### Background workers
 - Token validation
