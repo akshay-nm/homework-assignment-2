@@ -18,9 +18,9 @@ The API accepts HTTP requests.
 
 ### Create a user 
 
-*protocol* : **HTTP**
-*path* : **users**
-*payload_type* : **JSON**
+*protocol* : **HTTP**  
+*path* : **users**  
+*payload_type* : **JSON**  
 *required_fields* : 
 <ul>
     <li>firstName</li>
