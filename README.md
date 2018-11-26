@@ -85,17 +85,6 @@ The API accepts HTTP requests.
 }
 ``` 
 
-
-
-*example* : **POST** request at `localhost:3000/users` with following payload
-``` 
-{
-    "firstName":"John",
-    "lastName":"Doe",
-    "email":"john@doe.com",
-    "streetAddress":"111, xyz street"
-} 
-```
 ## API overview
 ### Exposed       
 - customer
