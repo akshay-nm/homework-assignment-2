@@ -100,7 +100,45 @@ The API accepts HTTP requests.
     "token":"akh279sbn09mn2gh89xSJ2"
 } 
 ```
- 
+
+### Get menu
+
+*protocol* : **HTTP**  
+*request_type* : **GET**  
+*path* : **menu**  
+*payload_type* : **JSON**   
+*fields* : **token**  
+
+*example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2`
+
+### Fill shopping cart
+
+*protocol* : **HTTP**  
+*request_type* : **UPDATE**
+*path* : **cart**  
+*payload_type* : **JSON**  
+*fields* : 
+<ul>
+    <li>token</li>
+    <li>items</li>
+
+*example* : **UPDATE** request at `localhost:3000/cart` with following payload
+``` 
+{
+    "token":"akh279sbn09mn2gh89xSJ2",
+    "items": [
+        {
+            "id":"1A",
+            "quantity":1
+        },
+        {
+            "id":"12B",
+            "quantity":4
+        }
+    ]
+} 
+```
+
 
 ## API overview
 ### Exposed       
