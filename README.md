@@ -46,10 +46,12 @@ The API accepts HTTP requests.
 *request_type* : **UPDATE**
 *path* : **users**  
 *payload_type* : **JSON**  
-*fields* : email and atleast on field to update  
-    - firstName
-    - lastName
-    - streetAddress
+*fields* : **email** and atleast one of the following field to update  
+<ul>
+    <li>firstName</li>
+    <li>lastName</li>
+    <li>streetAddress</li>
+</ul>
 
 *example* : **UPDATE** request at `localhost:3000/users` with following payload
 ``` 
