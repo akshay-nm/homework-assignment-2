@@ -111,7 +111,7 @@ The API accepts HTTP requests.
 
 *example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2`
 
-### Fill shopping cart
+### Update shopping cart
 
 *protocol* : **HTTP**  
 *request_type* : **UPDATE**
@@ -136,6 +136,24 @@ The API accepts HTTP requests.
             "quantity":4
         }
     ]
+} 
+```
+
+### Create order 
+
+*protocol* : **HTTP**  
+*request_type* : **POST**  
+*path* : **orders**  
+*payload_type* : **JSON**   
+*fields* :  
+<ul>
+    <li>token</li>
+</ul>
+
+*example* : **POST** request at `localhost:3000/orders` with following payload
+``` 
+{
+    "token":"akh279sbn09mn2gh89xSJ2"
 } 
 ```
 
