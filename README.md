@@ -71,6 +71,31 @@ The API accepts HTTP requests.
 
 *example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` 
 
+### User Login
+
+*protocol* : **HTTP**  
+*request_type* : **POST**  
+*path* : **users**  
+*payload_type* : **JSON**   
+*fields* : **email**  
+*response* :  
+```
+{
+    "token":"asdfqwer78sdf11kl03c" 
+}
+``` 
+
+
+
+*example* : **POST** request at `localhost:3000/users` with following payload
+``` 
+{
+    "firstName":"John",
+    "lastName":"Doe",
+    "email":"john@doe.com",
+    "streetAddress":"111, xyz street"
+} 
+```
 ## API overview
 ### Exposed       
 - customer
