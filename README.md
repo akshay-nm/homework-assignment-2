@@ -121,7 +121,7 @@ The API accepts HTTP requests.
 <ul>
     <li>token</li>
     <li>items</li>
-
+</ul>
 *example* : **UPDATE** request at `localhost:3000/cart` with following payload
 ``` 
 {
