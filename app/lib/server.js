@@ -1,5 +1,7 @@
-/*
-* This file contains server for the API 
+/**
+ * This file contains server for the API 
+ * 
+ * When the server receives a request from a client 
 */
 
 // Dependencies
