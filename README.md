@@ -16,7 +16,7 @@ Follow these steps to get this API up and running.
 
 The API accepts HTTP requests.
 
-### Create a user 
+#### Create a user 
 
 *protocol* : **HTTP**  
 *request_type* : **POST**  
@@ -40,7 +40,7 @@ The API accepts HTTP requests.
 } 
 ```
 
-### Update a user
+#### Update a user
 
 *protocol* : **HTTP**  
 *request_type* : **UPDATE**
@@ -61,7 +61,7 @@ The API accepts HTTP requests.
 } 
 ```
 
-### Delete a user
+#### Delete a user
 
 *protocol* : **HTTP**  
 *request_type* : **DELETE**  
@@ -71,7 +71,7 @@ The API accepts HTTP requests.
 
 *example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` 
 
-### User Login
+#### User Login
 
 *protocol* : **HTTP**  
 *request_type* : **POST**  
@@ -86,7 +86,7 @@ The API accepts HTTP requests.
 } 
 ```
 
-### User Logout
+#### User Logout
 
 *protocol* : **HTTP**  
 *request_type* : **POST**  
@@ -101,7 +101,7 @@ The API accepts HTTP requests.
 } 
 ```
 
-### Get menu
+#### Get menu
 
 *protocol* : **HTTP**  
 *request_type* : **GET**  
@@ -111,7 +111,7 @@ The API accepts HTTP requests.
 
 *example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2`
 
-### Update shopping cart
+#### Update shopping cart
 
 *protocol* : **HTTP**  
 *request_type* : **UPDATE**
@@ -139,7 +139,7 @@ The API accepts HTTP requests.
 } 
 ```
 
-### Create order 
+#### Create order 
 
 *protocol* : **HTTP**  
 *request_type* : **POST**  
@@ -159,7 +159,7 @@ The API accepts HTTP requests.
 
 
 ## API overview
-### Exposed       
+#### Exposed       
 - customer
     - CRUD
     - Required Fields
@@ -171,7 +171,7 @@ The API accepts HTTP requests.
         - CU order
         - RU cart
 
-### Internal
+#### Internal
 - menu
     - items
         - itemId
@@ -192,7 +192,7 @@ The API accepts HTTP requests.
     - userid
     - expires
 
-### Background workers
+#### Background workers
 - Token validation
 - Log handler
 - Receipt handler
