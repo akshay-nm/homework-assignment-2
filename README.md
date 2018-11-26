@@ -19,15 +19,17 @@ The API accepts HTTP requests.
 ### Create a user 
 
 *protocol* : **HTTP**  
+*request_type* : **POST**
 *path* : **users**  
 *payload_type* : **JSON**  
-*required_fields* : 
+*fields* : 
 <ul>
     <li>firstName</li>
     <li>lastName</li>
     <li>email</li>
     <li>streetAddress</li>
 </ul>
+*optional_fields* : none
 
 *example* : **POST** request at `localhost:3000/users` with following payload
 ``` 
@@ -38,6 +40,27 @@ The API accepts HTTP requests.
     "streetAddress":"111, xyz street"
 } 
 ```
+
+### Update a user
+
+*protocol* : **HTTP**  
+*request_type* : **UPDATE**
+*path* : **users**  
+*payload_type* : **JSON**  
+*fields* : email and atleast on field to update  
+    - firstName
+    - lastName
+    - streetAddress
+
+*example* : **UPDATE** request at `localhost:3000/users` with following payload
+``` 
+{
+    "lastName":"zzz",
+    "email":"john@doe.com"
+} 
+```
+
+
 
 ## API overview
 ### Exposed       
