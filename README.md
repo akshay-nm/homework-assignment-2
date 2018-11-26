@@ -46,7 +46,7 @@ The API accepts HTTP requests.
 *request_type* : **UPDATE**
 *path* : **users**  
 *payload_type* : **JSON**  
-*fields* : **email** and atleast one of the following field to update  
+*fields* : **token** and atleast one of the following field to update  
 <ul>
     <li>firstName</li>
     <li>lastName</li>
@@ -57,7 +57,7 @@ The API accepts HTTP requests.
 ``` 
 {
     "lastName":"zzz",
-    "email":"john@doe.com"
+    "token":"akh279sbn09mn2gh89xSJ2"
 } 
 ```
 
