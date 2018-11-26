@@ -39,7 +39,7 @@ All the necessary information required to perform valid test transaction is stor
 For testing purposes, a module with all dummy information has been added to the API. When the app launches in staging environment, this module is used. 
 This module adds payment information to each new user whenever a valid create user request is received.
 
-The configuration folder in the API directory contains stripe and mailgun containers. Once the API is supplied with necessary keys and tokens, it uses them to perform ![HTTP basic authentication](Basic Authentication) in case of a stripe and mailgun transaction.
+The configuration folder in the API directory contains stripe and mailgun containers. Once the API is supplied with necessary keys and tokens, it uses them to perform [HTTP basic authentication] in case of a stripe and mailgun transaction.
 
 ## Interacting with API
 
