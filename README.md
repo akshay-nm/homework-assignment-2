@@ -1,5 +1,7 @@
 # Homework Assignment 2 - Node.js Masterclass
 
+<br><br>
+
 ## Getting started
 
 Follow these steps to get this API up and running.
@@ -11,10 +13,12 @@ Follow these steps to get this API up and running.
 - Run `node index.js`
 - If everything's O.K. then the terminal is now displaying relevant *port* information.
 - Check the next section to know more about API Interactions.
+<br><br>
 
 ## Interacting with API
 
 The API accepts HTTP requests.
+<br>
 
 #### Create a user 
 
@@ -39,6 +43,7 @@ The API accepts HTTP requests.
     "streetAddress":"111, xyz street"
 } 
 ```
+<br><br>
 
 #### Update a user
 
@@ -60,6 +65,7 @@ The API accepts HTTP requests.
     "token":"akh279sbn09mn2gh89xSJ2"
 } 
 ```
+<br><br>
 
 #### Delete a user
 
@@ -70,6 +76,7 @@ The API accepts HTTP requests.
 *fields* :  **email**  
 
 *example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` 
+<br><br>
 
 #### User Login
 
@@ -85,6 +92,7 @@ The API accepts HTTP requests.
     "email":"john@doe.com"
 } 
 ```
+<br><br>
 
 #### User Logout
 
@@ -100,6 +108,7 @@ The API accepts HTTP requests.
     "token":"akh279sbn09mn2gh89xSJ2"
 } 
 ```
+<br><br>
 
 #### Get menu
 
@@ -110,6 +119,7 @@ The API accepts HTTP requests.
 *fields* : **token**  
 
 *example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2`
+<br><br>
 
 #### Update shopping cart
 
@@ -138,6 +148,7 @@ The API accepts HTTP requests.
     ]
 } 
 ```
+<br><br>
 
 #### Create order 
 
@@ -156,9 +167,11 @@ The API accepts HTTP requests.
     "token":"akh279sbn09mn2gh89xSJ2"
 } 
 ```
-
+<br><br>
 
 ## API overview
+<br><br>
+
 #### Exposed       
 - customer
     - CRUD
@@ -170,6 +183,7 @@ The API accepts HTTP requests.
     - tasks
         - CU order
         - RU cart
+<br><br>
 
 #### Internal
 - menu
@@ -191,6 +205,7 @@ The API accepts HTTP requests.
     - id
     - userid
     - expires
+<br><br>
 
 #### Background workers
 - Token validation
