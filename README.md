@@ -43,7 +43,7 @@ The configuration folder in the API directory contains stripe and mailgun contai
 
 ## Interacting with API
 
-The API accepts HTTP and HTTPS requests. Assuming that the API is running under test configuration with all the necessary bells and whistles (refering to MAILGUN and STRIPE credentials here), the following sections explain behavior that can be expected from the API.
+The API accepts HTTP and HTTPS requests. Assuming that the API is running under test configuration with all the necessary bells and whistles (referring to MAILGUN and STRIPE credentials here), the following sections explain behavior that can be expected from the API.
 <br><br>
 
 #### Create a user 
