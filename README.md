@@ -75,15 +75,32 @@ The API accepts HTTP requests.
 
 *protocol* : **HTTP**  
 *request_type* : **POST**  
-*path* : **users**  
+*path* : **login**  
 *payload_type* : **JSON**   
 *fields* : **email**  
-*response* :  
-```
-{
-    "token":"asdfqwer78sdf11kl03c" 
-}
+
+*example* : **POST** request at `localhost:3000/login` with following payload
 ``` 
+{
+    "email":"john@doe.com"
+} 
+```
+
+### User Logout
+
+*protocol* : **HTTP**  
+*request_type* : **POST**  
+*path* : **logout**  
+*payload_type* : **JSON**   
+*fields* : **email**  
+
+*example* : **POST** request at `localhost:3000/logout` with following payload
+``` 
+{
+    "token":"akh279sbn09mn2gh89xSJ2"
+} 
+```
+ 
 
 ## API overview
 ### Exposed       
