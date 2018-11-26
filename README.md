@@ -5,10 +5,10 @@
 ## Getting started
 
 #### Requirements
-- Node.js
-- Mailgun.com account
-- Stripe.com account
-- Postman or any other application with similar functionalities
+- Node.js installation
+- A working Mailgun.com account, _required for **sending email receipts to customers**._
+- A working Stripe.com account, _required for **stripe paymennt platform platform integration**._
+- curl, Postman or any other application with similar functionalities at your disposal
 
 #### Configuring the API
 - Download and extract this repository to a local directory.
