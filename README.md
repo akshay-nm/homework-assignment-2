@@ -22,7 +22,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### Create a user 
 
-*protocol* : **HTTP**  
 *request_type* : **POST**  
 *path* : **users**  
 *payload_type* : **JSON**   
@@ -47,7 +46,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### Update a user
 
-*protocol* : **HTTP**  
 *request_type* : **UPDATE**
 *path* : **users**  
 *payload_type* : **JSON**  
@@ -69,7 +67,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### Delete a user
 
-*protocol* : **HTTP**  
 *request_type* : **DELETE**  
 *path* : **users**  
 *payload_type* : **JSON**   
@@ -80,7 +77,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### User Login
 
-*protocol* : **HTTP**  
 *request_type* : **POST**  
 *path* : **login**  
 *payload_type* : **JSON**   
@@ -96,7 +92,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### User Logout
 
-*protocol* : **HTTP**  
 *request_type* : **POST**  
 *path* : **logout**  
 *payload_type* : **JSON**   
@@ -112,7 +107,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### Get menu
 
-*protocol* : **HTTP**  
 *request_type* : **GET**  
 *path* : **menu**  
 *payload_type* : **JSON**   
@@ -123,7 +117,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### Update shopping cart
 
-*protocol* : **HTTP**  
 *request_type* : **UPDATE**
 *path* : **cart**  
 *payload_type* : **JSON**  
@@ -153,7 +146,6 @@ The API accepts HTTP and HTTPS requests.
 
 #### Create order 
 
-*protocol* : **HTTP**  
 *request_type* : **POST**  
 *path* : **orders**  
 *payload_type* : **JSON**   
