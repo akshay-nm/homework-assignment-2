@@ -17,7 +17,7 @@ Follow these steps to get this API up and running.
 
 ## Interacting with API
 
-The API accepts HTTP requests.
+The API accepts HTTP and HTTPS requests.
 <br><br>
 
 #### Create a user 
