@@ -5,16 +5,22 @@
 ## Getting started
 
 #### Requirements
-- Node.js installation
+- Node.js working installation.
 - A working Mailgun.com account, _required for **sending email receipts to customers**._
 - A working Stripe.com account, _required for **stripe payment platform platform integration**._
-- curl, Postman or any other application with similar functionalities at your disposal
+- _curl_, _Postman_ or any other application with similar functionalities at your disposal.
 
 #### Configuring the API
 - Download and extract this repository to a local directory.
-- Navigate to `folder-containing-the-extracted-repository/app/lib` folder.
-- Open the `config.js` file in the editor of your choice.
-- Find the `environments.staging` object definition, the following properties of this object are initialized with empty string. **YOU NEED TO REPLACE THE EMPTY STRINGS WITH VALID ONES.**
+- Navigate to `folder-containing-the-extracted-repository/app/lib/config/` directory. There should be files named `stripeConfig.js` and `mailgunConfig.js`. These files act as containers for data required from your end. 
+- Open the `stripeConfig.js` file in the editor of your choice.
+- Find the `stripe` object in the file. You can see that this project has a few properties initializaed by an empty string. **YOU NEED TO REPLACE THE EMPTY STRINGS WITH VALID ONES.**  
+![Screenshot: An image showing what to replace in the `stripeConfig.js`](stringConfig)
+- Save the file and close it.
+- Open the `mailgunConfig.js` file in the editor of yoour choice, and update the necessary information.  
+![Screeshot: An image showing what to replace in the `mailgunConfig.js`](mailgunConfig)
+- Save the file and close it.  
+> Now the API setup is complete.
 
 #### Running the API
 - Open a terminal/command-line window and navigate into the `app/` directory.
