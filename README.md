@@ -1,6 +1,6 @@
 # Homework Assignment 2 - Node.js Masterclass
 
-<br><br>
+<br>
 
 ## Getting started
 
@@ -171,42 +171,24 @@ The API accepts HTTP requests.
 <br><br>
 
 ## API overview
-<br>
 
-#### Exposed       
-- customer
-    - CRUD
-    - Required Fields
-        - firstName
-        - lastName
-        - email
-        - streetAddress
-    - tasks
-        - CU order
-        - RU cart
-<br><br>
+#### Integration with Stripe.com        
 
-#### Internal
-- menu
-    - items
-        - itemId
-    
-
-- item
-    - id
-    - price
-
-- order
-    - userId
-    - items
-        - itemId
-    - placedOn
-
-- token
-    - id
-    - userid
-    - expires
-<br><br>
+All the necessary information required to perform valid test transaction is stored in config file.
+When a new user is created, a dummy card is automatically added to the user object. 
+*Dummy card information*: 
+```
+{
+    "card": {
+        "number":"4242 4242 4242 4242"
+        "brand":"Visa"
+    },
+    "Token": {
+        "token":"tok_visa",
+        "brand":"visa"
+    }
+}
+```
 
 #### Background workers
 - Token validation
