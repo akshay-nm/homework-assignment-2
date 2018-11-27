@@ -3,7 +3,7 @@
 */
 
 // Dependencies
-
+var server = require('./lib/server');
 
 // Container
 var app = {};
@@ -11,7 +11,7 @@ var app = {};
 // Initialization
 app.init = function() {
     // Start the server
-
+    server.init();
     // Start the background workers
 
 }
