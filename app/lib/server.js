@@ -8,6 +8,7 @@
 var config = require('./config/config');
 var handlers = require('./handlers');
 var helpers = require('./helpers');
+var router = require('./router');
 
 var fs = require('fs');
 var path = require('path');
@@ -101,7 +102,7 @@ server.unifiedServer = function(req, res){
             'payload' : helpers.parseJsonToObject(buffer)
         };
 
-        var chosenhandler = typeof(server.router[trimmedPath]) != 'undefined' ? server.router[trimmedPath] : handlers.notFound;
+        var chosenhandler = typeof(router[trimmedPath]) != 'undefined' ? router[trimmedPath] : handlers.notFound;
 
         chosenhandler(data, function(statusCode, payload){
             // Validating the statuscode passed by handler
@@ -122,19 +123,6 @@ server.unifiedServer = function(req, res){
     });
 }
 
-
-
-
-// Request router
-server.router = {
-    'ping' : handlers.ping,
-    'users' : handlers.users,
-    'login' : handlers.login,
-    'logout' : handlers.logout,
-    'menu' : handlers.menu,
-    'cart' : handlers.cart,
-    'orders' : handlers.orders
-};
 
 // Server initialization function
 server.init = function(){
