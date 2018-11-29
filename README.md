@@ -33,6 +33,33 @@
 
 # API overview
 
+## What's happening?
+
+To understand this, lets assume that we have a new customer who wants to order something on the Pizza Store. We are to assume that the Pizza Delivery Online Service already has a frontend configured to work with this API. 
+
+> Details about the request formats are discussed later in "Interacting with API" section of this document.
+
+Now, the primary requirement to access any of the functionalities provided by the online service is for a customer to have an account. To create an account, the customer needs to provide
+- First name
+- Last name
+- E-mail
+- Street address
+- Password
+This part is handled with a POST request from the frontend with all the above mentioned fields as request body. 
+Once the server validates the data, modifies and saves it, it sends a O.K. response to the frontend. This concludes the **Registration Process**. That's not all.  
+The next requirement for the customer to access the API is a valid session. For that the customer needs to share its email and password with the API. This also happens with a _POST_ request with the fields in the request body (JSON). If the authentication is successful, the API sends another O.K. response to the frontend, this time with a _TOKEN_. That's essentially the **Login Process**. 
+
+> The server assigns expiration to the tokens at the time of creation. This ensures that if no token modifications occur, each session is limited.
+
+Now the customer can access other features, namely
+- Edit their Credentials
+- Delete their account
+- Access the menu
+- Add items from the menu to the cart
+- Place orders
+
+I tried my best to keep the API message driven. Any suggestions on how i can improve on that?
+
 ## Integration with stripe.com and mailgun.com       
 
 All the necessary information required to perform valid test transaction is stored in config file. 
