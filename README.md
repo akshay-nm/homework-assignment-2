@@ -99,7 +99,7 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
 
 #### Update a user
 
-*request_type* : **UPDATE**  
+*request_type* : **PATCH**  
 *path* : **users**  
 *payload_type* : **JSON**  
 *fields* : **token** and atleast one of the following field to update  
@@ -109,11 +109,10 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
     <li>streetAddress</li>
 </ul>
 
-*example* : **UPDATE** request at `localhost:3000/users` with following payload
+*example* : **UPDATE** request at `localhost:3000/users` with token placed in header and following payload
 ``` 
 {
-    "lastName":"zzz",
-    "token":"akh279sbn09mn2gh89xSJ2"
+    "lastName":"zzz"
 } 
 ```
 <br><br>
@@ -125,37 +124,33 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
 *payload_type* : **JSON**   
 *fields* :  **email**  
 
-*example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` 
+*example* : **DELETE** request at `localhost:3000/users?email=john@doe.com` with a valid token in the header
 <br><br><br>
 
 #### User Login
 
 *request_type* : **POST**  
-*path* : **login**  
+*path* : **session**  
 *payload_type* : **JSON**   
 *fields* : **email**  
 
 *example* : **POST** request at `localhost:3000/login` with following payload
 ``` 
 {
-    "email":"john@doe.com"
+    "email":"john@doe.com",
+    "password":"abcd1234"
 } 
 ```
 <br><br>
 
 #### User Logout
 
-*request_type* : **POST**  
-*path* : **logout**  
+*request_type* : **DELETE**  
+*path* : **session**  
 *payload_type* : **JSON**   
 *fields* : **email**  
 
-*example* : **POST** request at `localhost:3000/logout` with following payload
-``` 
-{
-    "token":"akh279sbn09mn2gh89xSJ2"
-} 
-```
+*example* : **POST** request at `localhost:3000/logout` with a valid token in the header
 <br><br>
 
 #### Get menu
@@ -165,12 +160,12 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
 *payload_type* : **JSON**   
 *fields* : **token**  
 
-*example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2`
+*example* : **GET** request at `localhost:3000/menu?token=akh279sbn09mn2gh89xSJ2` with a valid token in the header
 <br><br><br>
 
 #### Update shopping cart
 
-*request_type* : **UPDATE**
+*request_type* : **PATCH**
 *path* : **cart**  
 *payload_type* : **JSON**  
 *fields* : 
@@ -179,10 +174,9 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
     <li>items</li>
 </ul>
 
-*example* : **UPDATE** request at `localhost:3000/cart` with following payload
+*example* : **UPDATE** request at `localhost:3000/cart` with a valid token in the header and following payload
 ``` 
 {
-    "token":"akh279sbn09mn2gh89xSJ2",
     "items": [
         {
             "id":"1A",
@@ -207,7 +201,7 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
     <li>token</li>
 </ul>
 
-*example* : **POST** request at `localhost:3000/orders` with following payload
+*example* : **POST** request at `localhost:3000/orders` with a valid token in the header and following payload
 ``` 
 {
     "token":"akh279sbn09mn2gh89xSJ2"
