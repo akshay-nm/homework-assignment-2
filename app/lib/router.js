@@ -9,9 +9,9 @@ var handlers = require('./handlers');
 // Container
 var router = {
     'ping' : handlers.ping,
+    'users/login' : handlers.login,
+    'users/logout' : handlers.logout,
     'users' : handlers.users,
-    'login' : handlers.login,
-    'logout' : handlers.logout,
     'menu' : handlers.menu,
     'cart' : handlers.cart,
     'orders' : handlers.orders
