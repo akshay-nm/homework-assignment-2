@@ -72,7 +72,7 @@ The API accepts HTTP and HTTPS requests. Assuming that the API is running under 
 
 #### Update a user
 
-*request_type* : **UPDATE**
+*request_type* : **UPDATE**  
 *path* : **users**  
 *payload_type* : **JSON**  
 *fields* : **token** and atleast one of the following field to update  
