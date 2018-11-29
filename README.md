@@ -48,7 +48,7 @@ Now, the primary requirement to access any of the functionalities provided by th
 
 This part is handled with a POST request from the frontend with all the above mentioned fields as request body. 
 Once the server validates the data, modifies and saves it, it sends a O.K. response to the frontend. This concludes the **Registration Process**. That's not all.  
-The next requirement for the customer to access the API is a valid session. For that the customer needs to share its email and password with the API. This also happens with a _POST_ request with the fields in the request body (JSON). If the authentication is successful, the API sends another O.K. response to the frontend, this time with a _TOKEN_. That's essentially the **Login Process**. 
+The next requirement for the customer to access the API is a valid session. For that the customer needs to share its email and password with the API. This also happens with a POST request with the fields in the request body (JSON). If the authentication is successful, the API sends another O.K. response to the frontend, this time with a TOKEN. That's essentially the **Login Process**. 
 
 > The server assigns expiration to the tokens at the time of creation. This ensures that if no token modifications occur, each session is limited.
 
