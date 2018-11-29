@@ -58,7 +58,7 @@ Now the customer can access other features, namely
 - Add items from the menu to the cart
 - Place orders
 
-I tried my best to keep the API message driven. Any suggestions on how i can improve on that?
+I tried my best to keep the API message driven without using external modules and dependencies. Any suggestions on how i can improve on that?
 
 ## Integration with stripe.com and mailgun.com       
 
