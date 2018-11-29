@@ -3,6 +3,7 @@
 */
 
 // Dependencies
+var crypto = require('crypto');
 
 
 // Container
